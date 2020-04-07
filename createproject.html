@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <title>My Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <script language="javascript" type="text/javascript" src="tgv.js"></script>
+</head>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li class="logo"><a href="homepage.html"></a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+        <h1>Enter Project Deets</h1>
+    </header>
+<body>
+    <form name="form1" action="viewandseachproject.html" method="GET">
+        <table>
+<tr>
+<td>Project Name</td>
+<td><input type="text" name="textprojectnames"id="textprojectname" size="30"></td></br>
+</tr>
+<td>Project Manager</td>
+<td><label for="Manager"></label>
+    <select id="Manager" name="Manager"></select>
+</td><br> </br>
+</tr>
+
+<td>Project Start Date</td>
+<label for="start"></label>
+<td><input type="date" id="start" name="project-start" value="2018-03-19" min="2018-01-01" max="2018-12-31"></td><br> </br>
+</tr>
+
+<td>Project End Date</td>
+<label for="end"></label>
+<td><input type="date" id="end" name="project-end" value="2019-03-19" min="2019-01-01" max="2019-12-31"></td><br> </br>
+</tr>
+
+<td>Project Value</td>
+<td><input type="number" id="textProjectValues" name="textProjectValue" min="1000" max="1000000000"></td><br> </br>
+</tr>
+
+<td>Is Project critical</td>
+<td><select name="Critical" placeholder="Critical"><option>No<option>Yes</select></td>
+</tr>
+
+<td>Bussiness unit</td>
+<td><input type="text" name="textBussinessunits"id="textBussinessunit" size="30"></td><br> </br>
+</tr>
+
+<td><input type="submit" name="continue" value="Save and continue" onClick="projectJS()"></td><br> </br>
+            </tr>
+        </table>
+    </form>
+
+<footer>US 2020</footer>
+</body>
+</html>
